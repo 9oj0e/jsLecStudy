@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrays</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const arr1 = ["A", "B", "C"];
+
+        const arr2 = [
+            "a",
+            "b",
+            "c"
+        ]
+        const arr3 = [];
+        arr3[0] = "Aa";
+        arr3[1] = "Bb";
+        arr3[2] = "Cc";
+
+        const arr4 = new Array(
+            "1",
+            "2",
+            "3"
+        );
+
+        let value1 = arr1[0];
+        let value2 = arr2[0];
+        let value3 = arr3[0];
+        arr4[0] = value1;
+        arr4[1] = value2;
+        arr4[2] = value3;
+        const arr5 = new Array(
+            arr4.toString(),
+            arr3[1],
+            arr3[2]
+        )
+        arr5.push("aaa")
+        document.getElementById("demo").innerHTML = arr5;
+    </script>
+</body>
+
+</html>

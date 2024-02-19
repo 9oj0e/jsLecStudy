@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 익명 함수
+        let m1 = function (n1, n2) {
+            console.log(n1 + n2);
+        }
+        m1(1, 2);
+        // 람다식 (return이 없으니)
+        let m2 = (n1, n2) => {
+            console.log(n1 + n2);
+        }
+        m2(1, 2);
+        // 람다 '표현'식 (return이 있으니)
+        let m3 = (n1, n2) => {
+            return n1 + n2;
+        }
+        let result = m3(1, 2);
+        console.log(result);
+    </script>
+</body>
+
+</html>

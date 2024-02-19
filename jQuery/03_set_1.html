@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+
+<body>
+    <h1>Set Content - text(), html() and val()</h1>
+    <h3>parameter에 값을 대입하면 해당 값을 바뀐다.</h3>
+    <hr>
+    <div>
+        <span>name: </span>
+        <input type="text" id="name">
+        <button type="submit" id="submit">submit</button>
+    </div>
+    <button id="btn-title">set title</button>
+    <button id="btn-subtitle">set subtitle</button>
+    <button id="btn-value">set value</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#btn-title").click(e => { $("h1").text("나는 누구인가") })
+        $("#btn-subtitle").click(e => { $("h3").text("너는 누구인가") })
+        $("#btn-value").click(e => { $("input").val("똑똑한 청년.") })
+        $("#submit").click(function () { alert("input: " + $("#name").val()) });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+
+<body>
+    <h1>.text() / .html()</h1>
+    <hr>
+    <p id="msg" hidden>
+        One very important part of <b>jQuery</b> is the possibility to manipulate the DOM.
+    </p>
+    <button id="btn-msg">Get msg</button>
+    <button id="btn-html">Get html</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#btn-msg").click(function () { alert("Message: " + $("#msg").text()) });
+        $("#btn-html").click(function () { alert("HTML: " + $("#msg").html()) });
+    </script>
+</body>
+
+</html>

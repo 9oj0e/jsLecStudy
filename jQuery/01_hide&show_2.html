@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1 id="title">title</h1>
+    <h2 id="subtitle">subtitle</h2>
+    <button id="btn-toggle">Toggle</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        let num = -1;
+        function toggleTitle(e) {
+            alert("button toggled");
+        };
+        $("#btn-toggle").click(function () {
+            $("#subtitle").toggle(750, toggleTitle());
+        });
+    </script>
+</body>
+
+</html>

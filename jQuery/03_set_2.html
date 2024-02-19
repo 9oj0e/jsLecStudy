@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+
+<body>
+    <h1>Set Content - attr()</h1>
+    <h3>parameter에 값을 대입하면 해당 값을 바뀐다.</h3>
+    <hr>
+    <div>
+        <a id="link" href="">link</a>
+    </div>
+    <button id="btn-attribute">set link</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#btn-attribute").click(e => { $("#link").attr("href", "https://www.w3schools.com/jquery/jquery_dom_set.asp") })
+    </script>
+</body>
+
+</html>
