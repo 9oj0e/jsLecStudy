@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js평가</title>
+</head>
+
+<body>
+    <h1>틀린 문제</h1>
+    <hr>
+    <h2>console log 확인</h2>
+    <script>
+        for (i = 0; i < 3; i++) {
+            const log = () => {
+                console.log(i);
+            }
+            log();
+        }
+        for (i = 0; i < 3; i++) {
+            const log = () => {
+                console.log(i);
+            }
+            setTimeout(log, 100)
+        }
+    </script>
+</body>
+
+</html>
