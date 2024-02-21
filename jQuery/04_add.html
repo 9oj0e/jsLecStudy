@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+
+<body>
+
+
+    <button id="btn-append">append</button>
+    <button id="btn-prepend">prepend</button>
+    <button id="btn-after">after</button>
+    <button id="btn-before">before</button>
+    <hr>
+    <div id="target">TARGET</div>
+    <hr>
+    <script>
+        $("#btn-append").click(() => {
+            $("#target").append("<b> AP</b>");
+        });
+        $("#btn-prepend").click(() => {
+            $("#target").prepend("<b>PP </b>");
+        });
+        $("#btn-after").click(() => {
+            $("#target").after("<div><b>AFTER</b></div>");
+        });
+        $("#btn-before").click(() => {
+            $("#target").before("<div><b>BEFORE</b></div>");
+        });
+    </script>
+</body>
+
+</html>

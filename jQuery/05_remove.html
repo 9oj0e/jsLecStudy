@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+
+<body>
+
+    <button id="btn-remove-all">remove all</button>
+    <button id="btn-remove">remove</button>
+    <hr>
+    <p id="target">to be removed</p>
+    <p id="target">to be removed</p>
+    <p id="target">to be removed</p>
+    <p id="target">to be removed</p>
+    <script>
+        $("#btn-remove-all").click(() => {
+            $("p").remove("#target");
+        });
+        $("#btn-remove").click(() => {
+            $("#target").remove();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .critical {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn-important">important</button>
+    <button id="btn-critical">critical</button>
+    <button id="btn-remove">remove</button>
+    <hr>
+    <span id="target">TARGET</span>
+    <script>
+        $("#btn-important").click(() => {
+            $("#target").addClass("important");
+        });
+        $("#btn-critical").click(() => {
+            $("#target").addClass("critical");
+        });
+        $("#btn-remove").click(() => {
+            $("#target").removeClass();
+        });
+    </script>
+</body>
+
+</html>
