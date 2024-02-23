@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/join" method="get">
+        농구 : <input type="checkbox" name="hobby" value="basketball">
+        축구 : <input type="checkbox" name="hobby" value="soccer">
+        야구 : <input type="checkbox" name="hobby" value="baseball">
+        <!-- check가 된 box만 queryString에 넘어간다. -->
+        <button>회원가입</button>
+    </form>
+</body>
+
+</html>

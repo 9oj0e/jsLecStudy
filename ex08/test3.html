@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>onEvent</title>
+</head>
+
+<body>
+    <form action="/join" onsubmit="return valid()">
+        <input type="text" name="username" id="username" onkeyup="check()">
+        <input type="text">
+        <button>회원가입</button>
+    </form>
+    <script>
+        let isCheck = false;
+
+        function valid() {
+            return isCheck;
+        }
+        function check() {
+            let username = $("#username").val();
+            console.log(username);
+            if (username === "ssar") {
+                isCheck = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
