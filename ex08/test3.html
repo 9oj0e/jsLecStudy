@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <form action="/join" onsubmit="return valid()">
+    <form action="/join" onsubmit="return valid()" id="form-box" autocomplete="off">
         <input type="text" name="username" id="username" onkeyup="check()">
         <input type="text">
         <button>회원가입</button>
+        <div id="duplicate" hidden>이런 ... 중복되었습니다.</div>
     </form>
     <script>
         let isCheck = false;
@@ -24,6 +25,10 @@
             let username = $("#username").val();
             console.log(username);
             if (username === "ssar") {
+                isCheck = false;
+                $("#duplicate").show();
+            } else {
+                $("#duplicate").hide();
                 isCheck = true;
             }
         }
